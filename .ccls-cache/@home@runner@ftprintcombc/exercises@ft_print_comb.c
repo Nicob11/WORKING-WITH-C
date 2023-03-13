@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void ft_prin_comb(void) {
+void ft_print_comb(void) {
   int a;
   int b;
   int c;
@@ -10,12 +10,12 @@ void ft_prin_comb(void) {
   c = 50;
 
   while (a <= 55) {
-    write(1, &a, sizeof(int));
-    write(1, &b, sizeof(int));
-    write(1, &c, sizeof(int));
+    write(1, &a, 1);
+    write(1, &b, 1);
+    write(1, &c, 1);
 
     if (a == 55 && b == 56 && c == 57) {
-      write(1, &"\n", sizeof(char));
+      write(1, &"\n", 1);
     }
 
     if (c == 57) {
@@ -37,6 +37,6 @@ void ft_prin_comb(void) {
 }
 
 int main(void) {
-  ft_prin_comb();
+  ft_print_comb();
   return 0;
 }
